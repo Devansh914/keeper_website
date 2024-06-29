@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@media screen and (width<=50%){
+  
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header of app */
+.heading{
+  position: relative;
+  left:20vw;
+  text-decoration:dotted;
+  color:grey;
+}
+
+
+/* Dropdown Button */
+/* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+
+
+
+
+
+
+.heading{
+    font-size: 30px;
+}  
+.main{
+  margin:0;
+  padding:0;
+  
+  
+}
+
+
+
+#desc{
+  width:59vw;
+  height:6vh;
+}
+#descrip{
+  all:unset;
+  width:59vw;
+  height:3vh;
+  border: none;
+  border-bottom: 0.4px solid grey;
+  position: relative;
+  bottom:0.8vw;
+  background-color: white;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:28vw;
+  height:6vh;
+}
+#dropdownMenuButton{
+  width:28vw;
+  height:3vh;
+  margin: 0 0 0 0;
+}
+
+#date:hover{
+  cursor:pointer;
+  background-color: lightgray;
+}
+#date{
+  width:23vw;
+  height:4.5vh;
+  margin:0 0 0 0;
+  position: relative;
+  left:0vw;
+  bottom:0px;
+  border:none;
+  border-bottom:0.4px solid grey;
+}
+#desc{
+  display: inline-block;
+  cursor: pointer;
+}
+#h1{
+  font-family:sans-serif ;
+  font-size: 12px;
+  color:gray;
+  position: relative;
+  bottom:1vw;
+}
+#h2{
+  font-family:sans-serif ;
+  font-size: 12px;
+  color:gray;
+  position: relative;
+  top:1vw;
+  left:9.5vw;
+}
+#h3{
+  font-family:sans-serif ;
+  font-size: 12px;
+  color:gray;
+  position: relative;
+  bottom:2.7vw;
+  left:15vw;
+}
+
+.addtask{
+  position: relative;
+  left:12vw;
+  top:5.18vw;
+  width:130px;
+  height: 35px;
+  background-color: yellowgreen;
+  border:none;
+
+}
+.removetask{
+  width:130px;
+  height: 35px;
+  background-color: red; 
+  position: relative;
+  left: 15vw;
+  top:5vw;
+  border:none;
+}
+#dropdownicon{
+  position: relative;
+  left:20vw;
+}
+#addtaskicon{
+  position: relative;
+  right: 2vw;
+  font-size: 17px;
+  color: white;
+}
+#addremoveicon{
+  position: relative;
+  right:3px;
+  color:rgb(255, 255, 255);
+}
+.eachtask{
+  display: inline-block;
+
+  width:60vw;
+  height:10vh;
+  
+  position: relative;
+  right:5.5vw;
+  top:8vw;
+  
+}
+.tasks{
+  list-style-type: none;
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border:1.5px solid black;
+  position: relative;
+  border-radius: 80px;
+  cursor: pointer;
+  bottom:5vw;
+  left:1vw;
+}
+.eachtask{
+  font-family: 'Roboto', sans-serif;
+  color:rgba(0, 0, 0, 0.558)
+}
+.eachtask li{
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left:8vw;
+  top:2vw;
+}
+.duedatehai{
+  color:lightgrey;
+}
+.categoryhai{
+  position: relative !important; 
+  left:48vw !important;
+  top: -2vw !important;
+  width:80px;
+  height:20px;
+  background-color:rgb(128, 0, 0);
+  text-align: center;
+  color:#eee;
+  
+  ;
+}
+.tick::after{
+  
+  position: relative;
+  left:3px;
+  /* Add additional styling as needed */
+}
+
+#categorylabel{
+  position:relative;
+  top:2.5vh;
+  left:8vh;
+  font-family:sans-serif ;
+  font-size: 15px;
+  color:gray;
+  position: relative;
+}
+#dropdown{
+  position:relative;
+  top:4.6vh;
+  width:27vw;
+  background-color: lightcyan;
+}
+#datehai{
+  position: relative;
+  left:27vw;
+}
+#deletebutton{
+  position: absolute;
+  left:34vw;
+  width:130px;  
+  height: 35px;
+  top: 33vh;
+  border: none;
+  background-color: red;
+}

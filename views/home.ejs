@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todoapp.css">
+    <title><%= name %></title>
+    
+
+</head>
+<body>
+    
+
+    <div class="wholetodoapparea">
+        <% var options=['Personal','School','Work','Cleaning','Others'] %>
+
+
+  
+
+
+
+
+
+
+
+
+    <h1 class="heading" >TODO App</h1>
+   
+     
+    <div class="main">
+            <form action="/create_contact" method="post">
+
+                
+                 
+                <div id="desc">
+                     <span id="h1">DESCRIPTION</span>
+                    <input type="text" name="description" id="descrip"
+                    placeholder="what do you need to do?" required>
+
+                </div> <br>
+                   <div id="restoptions">
+                    <div>
+                            <label for="dropdown" id="categorylabel" class="">Category</label><br>
+                            <select id="dropdown" name="category">
+                                <% for (let i = 0; i < options.length; i++) { %>
+                                  <option value="<%= options[i] %>" ><%= options[i] %></option>
+                                <% } %>
+                              </select>
+                    </div>
+                      
+                     
+                            <div id="datehai">
+                                <span id="h3">due date</span>
+                                <input type="date" placeholder="duedate" id="date" name="due_date" required>
+                            </div>
+                        
+                      
+                   
+
+                   </div>
+                   <button class="addtask" type="submit"><i class="fas fa-plus" id="addtaskicon"></i>ADD TASK</button>
+                   
+                  
+            </form>
+           
+
+    </div>
+
+    <form action="/delete-contact">
+    <ul class="tasks">
+
+        <% for(i in todotask){%>
+        <div class="eachtask">
+            
+            <li><%= todotask[i].description %></li>  
+            <li class="duedatehai"> <i class="fas fa-calendar" id="taskscalendaricon"></i>&nbsp;&nbsp;<%= todotask[i].due_date %></li>
+            <li class="categoryhai"><%= todotask[i].category %></li>
+
+                <input type="checkbox" id="checkbox" name="checkbox" value="<%= todotask[i].id %>" >
+                <!-- <%= i._id %> -->
+           </div>
+            <%}%>
+            </ul>
+            <button type="submit" id="deletebutton">DELETE TASK&nbsp;&nbsp;&nbsp;<i class="fas fa-close" id="removetaskicon"></i></button>
+        </form>
+    
+    </div>
+
+
+
+
+
+    <script src="/js/todoapp.js"></script>
+    <script src="https://kit.fontawesome.com/0b8721e941.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
